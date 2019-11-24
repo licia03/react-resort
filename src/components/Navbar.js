@@ -15,7 +15,7 @@ export default class Navbar extends Component {
             <nav className="navbar">
                 <div className="nav-center">
                     <div className="nav-header">
-                        <Link to="/">
+                        <Link to={`${process.env.PUBLIC_URL}/`}>
                             <img src={logo} alt="Beach Resort" />
                         </Link>
                         <button 
@@ -28,10 +28,10 @@ export default class Navbar extends Component {
                     </div>
                     <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
                         <li>
-                            <Link to="/">Home</Link>    
+                            <Link to={`${process.env.PUBLIC_URL}/`}>Home</Link>    
                         </li>
                         <li>
-                            <Link to="/rooms">Rooms</Link>    
+                            <Link to={`${process.env.PUBLIC_URL}/rooms`}>Rooms</Link>    
                         </li>
                     </ul>
                 </div>

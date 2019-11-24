@@ -10,7 +10,7 @@ const Rooms = props => {
         <>
             <Hero hero="roomsHero">
                 <Banner title="Our rooms">
-                    <Link to="/" className="btn-primary">
+                    <Link to={`${process.env.PUBLIC_URL}/`} className="btn-primary">
                         Return home
                     </Link>
                 </Banner>

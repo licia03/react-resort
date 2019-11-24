@@ -10,13 +10,14 @@ import Navbar from './components/Navbar';
 import { Route, Switch } from 'react-router-dom';
 
 function App() {
+  const root = "react-resort/";
   return (
     <>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/rooms/" component={Rooms} />
-        <Route exact path="/rooms/:slug" component={SingleRoom} /> 
+        <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+        <Route exact path={`${process.env.PUBLIC_URL}/rooms`} component={Rooms} />
+        <Route exact path={`${process.env.PUBLIC_URL}/rooms/:slug`} component={SingleRoom} /> 
         <Route component={Error} />
       </Switch>
     </>
