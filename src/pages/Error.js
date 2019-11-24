@@ -10,8 +10,7 @@ const Error = props => {
                 title="404"
                 subtitle="page not found"
             >
-                <Link
-                    to="/"
+                <Link to={`${process.env.PUBLIC_URL}/`}
                     className="btn-primary"
                 >
                     return Home
