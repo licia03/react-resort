@@ -14,7 +14,7 @@ const Home = () => {
                     subtitle="Deluxe rooms starting at $299"
                 >
                     <Link 
-                        to="/rooms" 
+                        to={`${process.env.PUBLIC_URL}/rooms`} 
                         className="btn-primary"
                     >
                         Our rooms
