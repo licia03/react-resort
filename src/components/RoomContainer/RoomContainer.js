@@ -1,8 +1,8 @@
 import React from 'react';
-import RoomsFilter from './RoomsFilter';
-import RoomsList from './RoomsList';
-import { withRoomConsumer } from '../context';
-import Loading from './Loading';
+import RoomsFilter from '../RoomsFilter';
+import RoomsList from '../RoomsList/RoomsList';
+import { withRoomConsumer } from '../../context';
+import Loading from '../Loading/Loading';
 
 function RoomContainer({context}) {
     const {loading, sortedRooms, rooms} = context;

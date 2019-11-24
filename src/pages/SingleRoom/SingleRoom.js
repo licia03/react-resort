@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Hero from '../components/Hero';
-import defaultBcg from '../images/room-1.jpeg';
-import Banner from '../components/Banner';
+import defaultBcg from '../../images/room-1.jpeg';
+import Banner from '../../components/Banner/Banner';
 import { Link } from 'react-router-dom';
-import { RoomContext } from '../context';
-import StyledHero from '../components/StyledHero';
+import { RoomContext } from '../../context';
+import StyledHero from '../../components/StyledHero';
+import './SingleRoom.css';
 
 export default class SingleRoom extends Component {
     constructor(props) {
@@ -14,10 +14,6 @@ export default class SingleRoom extends Component {
             defaultBcg
         }
     }
-
-    // componentDidMount() {
-    //     // API call to get data
-    // }
     
     static contextType = RoomContext;
     

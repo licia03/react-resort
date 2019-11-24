@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Title from './Title';
+import Title from '../Title/Title';
 import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa';
+import './Services.css';
 
 export default class Services extends Component {
     state = {

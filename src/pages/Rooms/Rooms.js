@@ -1,7 +1,8 @@
 import React from 'react';
-import Hero from '../components/Hero';
-import Banner from '../components/Banner';
-import RoomContainer from '../components/RoomContainer';
+import Hero from '../../components/Hero/Hero';
+import Banner from '../../components/Banner/Banner';
+import RoomContainer from '../../components/RoomContainer/RoomContainer';
+import './Rooms.css';
 
 import { Link } from 'react-router-dom';
 
